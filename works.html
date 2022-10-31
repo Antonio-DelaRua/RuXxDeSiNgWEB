@@ -47,12 +47,12 @@
 
   <div class="preview-wrapper">
     <div class="switcher-head">
-      <span>Style Switcher</span>
+      <span>Cambia el Estilo</span>
       <div class="switcher-trigger tf-tools"></div>
     </div>
 
     <div class="switcher-body">
-      <h4>Choose Color:</h4>
+      <h4>Elige el  Color:</h4>
       <ul class="color-options list-none">
         <li class="c0" data-color="red" title="Default">Default</li>
         <li class="c1" data-color="blue" title="Red">Red</li>
@@ -64,7 +64,7 @@
 
 
 <main class="site-wrapper">
-  <div class="pt-table">
+  <div class="pt-table" style="margin-top: 45px;">
     <div class="pt-tablecell page-works relative">
       <!-- .close -->
       <a href="./" class="page-close"><i class="tf-ion-close"></i></a>
@@ -74,82 +74,129 @@
         <div class="row">
           <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
             <div class="page-title text-center">
-              <h2>My <span class="primary">works</span> <span class="title-bg">works</span></h2>
+              <h2>Mis<span class="primary"> Cursos</span> <span class="title-bg">Online</span></h2>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                 laoreet dolore magna aliquam erat volutpat.</p>
             </div>
           </div>
-        </div> <!-- /.row -->
+        <!-- /.row -->
 
-        <div class="row">
-          <div class="col-xs-12">
-            <ul class="filter list-inline">
-              <li><a href="#" class="active" data-filter="*">All</a></li>
-              <li><a href="#" data-filter=".Photoshop">Photoshop</a></li>
-              <li><a href="#" data-filter=".Illustrator">Illustrator</a></li>
-              <li><a href="#" data-filter=".Indesign">Indesign</a></li>
-              <li><a href="#" data-filter=".Artworks">Artworks</a></li>
-            </ul>
-          </div>
-        </div>
+        <section class="page-section " id="portfolio" style="margin-top: 5;">
+          <div class="container">
+             
+              <div class="row">
+                  <div class="col-lg-4 col-sm-6 mb-4">
 
-        <div class="row isotope-gutter">
-          <div class="col-xs-12 col-sm-6 col-md-4 Photoshop Illustrator">
-            <figure class="works-item">
-              <img src="images/works/1.jpg" alt="">
-              <div class="overlay"></div>
-              <figcaption class="works-inner">
-                <h4>Project Name</h4>
-                <p>Illustration, Digital Art</p>
-              </figcaption>
-            </figure>
+                      <!-- Galeria item 1-->
+
+                      <div class="portfolio-item">
+                          <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                              <div class="portfolio-hover">
+                                  <div class="portfolio-hover-content"><i class="fas fa-plus fa-2x"></i></div>
+                              </div>
+                              <img class="img-fluid" src="/images/html-css.png" alt="..." />
+                          </a>
+                          <div class="portfolio-caption">
+                          
+                              <div class="portfolio-caption-subheading" style="color:#5ee6e9; font-family: sans-serif;">Html y Css</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 mb-4">
+
+                      <!-- Galeria item 2-->
+
+                      <div class="portfolio-item">
+                          <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                              <div class="portfolio-hover">
+                                  <div class="portfolio-hover-content"><i class="fas fa-plus fa-2x"></i></div>
+                              </div>
+                              <img class="img-fluid" src="/images/javsacript.png" alt="..." />
+                          </a>
+                          <div class="portfolio-caption">
+                              
+                              <div class="portfolio-caption-subheading" style="color:#5ee6e9; font-family: sans-serif;">Javascript Básico</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 mb-4">
+
+                      <!-- Galeria item 3-->
+
+                      <div class="portfolio-item">
+                          <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                              <div class="portfolio-hover">
+                                  <div class="portfolio-hover-content"><i class="fas fa-plus fa-2x"></i></div>
+                              </div>
+                              <img class="img-fluid" src="/images/typescript.png" alt="..." />
+                          </a>
+                          <div class="portfolio-caption">
+                              
+                              <div class="portfolio-caption-subheading" style="color:#5ee6e9; font-family: sans-serif;">Typescript</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+
+                      <!-- Galeria item 4 -->
+
+                      <div class="portfolio-item">
+                          <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                              <div class="portfolio-hover">
+                                  <div class="portfolio-hover-content"><i class="fas fa-plus fa-2x"></i></div>
+                              </div>
+                              <img class="img-fluid" src="/images/git.png" alt="..." />
+                          </a>
+                          <div class="portfolio-caption">
+                              
+                              <div class="portfolio-caption-subheading" style="color:#5ee6e9; font-family: sans-serif;">Git</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0 ">
+
+                      <!-- Galeria item 5-->
+
+                      <div class="portfolio-item">
+                          <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                              <div class="portfolio-hover">
+                                  <div class="portfolio-hover-content"><i class="fas fa-plus fa-2x"></i></div>
+                              </div>
+                              <img class="img-fluid" src="/images/angular.png" alt="..." />
+                          </a>
+                          <div class="portfolio-caption">
+                             
+                              <div class="portfolio-caption-subheading" style="color:#5ee6e9; font-family: sans-serif;">Angular</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+
+                      <!-- Galeria item 6-->
+
+                      <div class="portfolio-item">
+                          <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                              <div class="portfolio-hover">
+                                  <div class="portfolio-hover-content"><i class="fas fa-plus fa-2x"></i></div>
+                              </div>
+                              <img class="img-fluid" src="/images/javajava.png" alt="..." />
+                          </a>
+                          <div class="portfolio-caption">
+                              
+                              <div class="portfolio-caption-subheading" style="color:#5ee6e9; font-family: sans-serif;">Java Básico</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 Illustrator">
-            <figure class="works-item">
-              <img src="images/works/2.jpg" alt="">
-              <div class="overlay"></div>
-              <figcaption class="works-inner">
-                <h4>Project Name</h4>
-                <p>Illustration, Digital Art</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 Indesign Photoshop">
-            <figure class="works-item">
-              <img src="images/works/3.jpg" alt="">
-              <div class="overlay"></div>
-              <figcaption class="works-inner">
-                <h4>Project Name</h4>
-                <p>Illustration, Digital Art</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 Artworks Illustrator">
-            <figure class="works-item">
-              <img src="images/works/4.jpg" alt="">
-              <div class="overlay"></div>
-              <figcaption class="works-inner">
-                <h4>Project Name</h4>
-                <p>Illustration, Digital Art</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 Photoshop">
-            <figure class="works-item">
-              <img src="images/works/5.jpg" alt="">
-              <div class="overlay"></div>
-              <figcaption class="works-inner">
-                <h4>Project Name</h4>
-                <p>Illustration, Digital Art</p>
-              </figcaption>
-            </figure>
-          </div>
+      </section>
+
+       
         </div> <!-- /.row -->
       </div> <!-- /.container -->
-      <br>
-      <br>
-      <nav class="page-nav clear">
-  <div class="container">
+     
+      <nav class="page-nav clear" >
+  <div class="container" style=" margin-top:14px;">
     <div class="flex flex-middle space-between">
       <span class="prev-page"><a href="services.html" class="link">&larr; Back</a></span>
       <span class="next-page"><a href="testimonials.html" class="link">Next &rarr;</a></span>
