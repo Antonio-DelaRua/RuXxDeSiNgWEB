@@ -23,19 +23,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-
-    - name: Install dependencies
-      run: |
-           npm install &&
-           npm i -g @angular/cli
-
-    - name: Build
-      run: ng build --base-href /dani/ --deploy-url /dani/
-
+  
     - name: Prepare SSH to work with the remote server
       run: |
           cd ~ && mkdir .ssh &&
