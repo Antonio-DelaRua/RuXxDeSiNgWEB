@@ -22,6 +22,10 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+    - name: copy into dist folder dependencies
+      run: |
+          mkdir dist &&
+          cp -r * dist/
 
   
     - name: Prepare SSH to work with the remote server
