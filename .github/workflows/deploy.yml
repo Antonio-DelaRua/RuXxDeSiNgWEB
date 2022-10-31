@@ -14,34 +14,7 @@ on:
         - main
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    environment: dev
-    strategy:
-      matrix:
-        node-version: [14.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-
-    - name: Install dependencies
-      run: |
-           npm install &&
-           npm i -g @angular/cli
-
-    - name: Build
-      run: ng build --base-href /dani/ --deploy-url /dani/
-
-    - name: Run tests
-      run: ng test --watch false
-
+  
   deploy:
     runs-on: ubuntu-latest
     environment: dev
