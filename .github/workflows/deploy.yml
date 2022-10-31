@@ -14,34 +14,7 @@ on:
         - main
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    environment: dev
-    strategy:
-      matrix:
-        node-version: [14.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-
-    - name: Install dependencies
-      run: |
-           npm install &&
-           npm i -g @angular/cli
-
-    - name: Build
-      run: ng build --base-href /dani/ --deploy-url /dani/
-
-    - name: Run tests
-      run: ng test --watch false
-
+  
   deploy:
     runs-on: ubuntu-latest
     environment: dev
@@ -49,20 +22,12 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-
-    - name: Install dependencies
+    - name: copy into dist folder dependencies
       run: |
-           npm install &&
-           npm i -g @angular/cli
+          mkdir dist &&
+          cp -r * dist/
 
-    - name: Build
-      run: ng build --base-href /dani/ --deploy-url /dani/
-
+  
     - name: Prepare SSH to work with the remote server
       run: |
           cd ~ && mkdir .ssh &&
@@ -86,7 +51,7 @@ jobs:
         # source to copy from
         source: "dist/*" # optional
         # destination to download on server
-        target: "/var/www/html/dani" # optional
+        target: "/var/www/html" # optional
 
     - name: Execute remote command using ssh template
       uses: cross-the-world/ssh-pipeline@v1.2.0
@@ -100,4 +65,4 @@ jobs:
         # private ssh key registered on the server
         pass: ${{secrets.REMOTE_PASS}}
         # command to be executed
-        script: chmod -R 774 /var/www/html/dani/*; mv /var/www/html/dani/dist/* /var/www/html/dani  # optional
+        script: chmod -R 774 /var/www/html/;  mv /var/www/html/dist/ /var/www/html
