@@ -1,0 +1,102 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: Node.js CI Deploy  on dev Example
+
+on:
+  push:
+    branches:
+        - develop
+  pull_request:
+    types:
+      - submitted
+    branches:
+        - develop
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    environment: dev
+    strategy:
+      matrix:
+        node-version: [14.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      run: |
+           npm install &&
+           npm i -g @angular/cli
+
+    - name: Build
+      run: ng build --base-href /dani/ --deploy-url /dani/
+
+    - name: Run tests
+      run: ng test --watch false
+
+  deploy:
+    runs-on: ubuntu-latest
+    environment: dev
+    needs: test
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      run: |
+           npm install &&
+           npm i -g @angular/cli
+
+    - name: Build
+      run: ng build --base-href /dani/ --deploy-url /dani/
+
+    - name: Prepare SSH to work with the remote server
+      run: |
+          cd ~ && mkdir .ssh &&
+          touch ~/.ssh/known_hosts &&
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key &&
+          chmod 600 ~/.ssh/deploy_key
+
+    - name: Copy to remote using sct template
+      uses: appleboy/scp-action@master
+      with:
+        # ssh remote host
+        host:  ${{secrets.REMOTE_HOST}}
+        # ssh remote user
+        username: ${{secrets.REMOTE_USER}}
+        # ssh remote port
+        port: 22 # optional, default is 22
+        # ssh remote password
+        password: ${{secrets.REMOTE_PASS}}
+        # content of ssh private key. ex raw content of ~/.ssh/id_rsa
+        # key: ${{ secrets.SSH_PRIVATE_KEY }} # optional
+        # source to copy from
+        source: "dist/*" # optional
+        # destination to download on server
+        target: "/var/www/html/dani" # optional
+
+    - name: Execute remote command using ssh template
+      uses: cross-the-world/ssh-pipeline@v1.2.0
+      with:
+        # hostname / IP of the server
+        host: ${{secrets.REMOTE_HOST}}
+        # ssh port of the server
+        port: 22 # optional, default is 22
+        # user of the server
+        user: ${{secrets.REMOTE_USER}}
+        # private ssh key registered on the server
+        pass: ${{secrets.REMOTE_PASS}}
+        # command to be executed
+        script: chmod -R 774 /var/www/html/dani/*; mv /var/www/html/dani/dist/* /var/www/html/dani  # optional

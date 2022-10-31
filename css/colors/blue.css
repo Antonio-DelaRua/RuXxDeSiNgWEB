@@ -1,0 +1,58 @@
+
+::-moz-selection {
+  background-color: #5ee6e9;
+}
+
+::selection {
+  background-color: #5ee6e9;
+}
+
+/* background color */
+.btn-primary,
+.loading-mask,
+.section-title h3::after,
+.hexagon-item:hover .hex-item div::before,
+.hexagon-item:hover .hex-item div::after,
+.progress .bar,
+.contact-social li:hover span {
+  background-color: #5ee6e9;
+}
+
+.nicescroll-cursors {
+  background: #5ee6e9 !important;
+}
+
+/* color */
+.primary,
+.link:hover,
+.filter .active,
+.works-item h4,
+.msg-success {
+  color: #5ee6e9;
+}
+
+/* border color */
+.testimonials .owl-dot.active {
+  border-color: #5ee6e9;
+}
+
+/* border top color */
+.site-wrapper,
+.contact-social li:hover span::after,
+.contact-social-hex:hover::before {
+  border-top-color: #5ee6e9;
+}
+
+/* border bottom color */
+.filter .active,
+.contact-social li:hover span::before,
+.contact-social-hex:hover::after {
+  border-bottom-color: #5ee6e9;
+}
+
+/* fill color */
+.service-hex:hover .fill,
+.service-hex:hover .st1 {
+  fill: #5ee6e9;
+}
+/*# sourceMappingURL=blue.css.map */
