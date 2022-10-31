@@ -248,6 +248,7 @@ background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3
   right: 30px;
   top: 30px;
   z-index: 100;
+  color:#5ee6e9;
 }
 
 .page-title {
