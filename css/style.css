@@ -1099,24 +1099,6 @@ background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+
 /* =================================== */
 /*  Color Switcher
 /* =================================== */
-.preview-wrapper {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-right: 0;
-  color: #333;
-  height: 150px;
-  right: 0px;
-  position: fixed;
-  top: 100px;
-  width: 260px;
-  z-index: 1200;
-  transition: all 0.4s ease-in-out 0s;
-  transform: translateX(100%);
-}
-
-.preview-wrapper.extend {
-  transform: translateX(0px);
-}
 
 .switcher-head {
   color: #333;
