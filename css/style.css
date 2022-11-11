@@ -1918,3 +1918,12 @@ background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+
 .boton-adaptado {
   width: 50%;
 }
+
+.tmodal1{
+  
+  font-size: 30px;
+  font-style: oblique;
+  font-weight: bold;
+  font-family: fantasy;
+  
+}
