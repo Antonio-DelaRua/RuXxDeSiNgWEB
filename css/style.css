@@ -9,6 +9,7 @@
 /*  General Styling
 /*-----------------------------------------------------------------------------------*/
 
+body { min-height: 100vh; }
 body {
   background: #ffffff;
   color: #898989;
@@ -61,7 +62,7 @@ a:hover {
 }
 
 a:hover, a:focus {
-  color: #b8a07e;
+  color: #1670e6;
   text-decoration: underline;
 }
 
@@ -91,12 +92,12 @@ p {
 }
 
 ::-moz-selection {
-  background: #b8a07e;
+  background: #1670e6;
   color: #fff;
 }
 
 ::selection {
-  background: #b8a07e;
+  background: #1670e6;
   color: #fff;
 }
 
@@ -165,7 +166,7 @@ p {
 }
 
 .hvr-shutter-in-horizontal:hover {
-  background: #b8a07e;
+  background: #1670e6;
 }
 
 .mb-30 {
@@ -761,4 +762,33 @@ nav ul li a {
 	.contenido-principal > * {
 		width: 100%;
 	}
+}
+
+.myButton {
+	box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+	background-color:#33bdef;
+	border-radius:6px;
+	border:1px solid #057fd0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+  
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #78685b;
+  margin-left: 50%;
+  margin-top: 25px;
+  transform: translateX(-50%);
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+	background-color:#019ad2;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
