@@ -79,9 +79,9 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({
-      strings: ["Building", "Obras en general", "Reformas", "exteriores"],
+      strings: ["Contrucciones", "Reformas", "Obras", "Building"],
       typeSpeed: 100,
-      loop: true,
+      loop: false,
     });
   });
 
