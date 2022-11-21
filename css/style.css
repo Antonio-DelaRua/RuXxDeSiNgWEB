@@ -353,7 +353,7 @@ nav ul li a {
 
 .services-block i {
   font-size: 44px;
-  color: #b8a07e;
+  color: #1986ce;
   line-height: 44px;
 }
 
@@ -380,7 +380,8 @@ nav ul li a {
 }
 
 .services-carousel .owl-dot.active {
-  background-color: #b8a07e;
+  background-color: #1986ce;
+  ;
 }
 
 .owl-nav {
@@ -425,7 +426,7 @@ nav ul li a {
 }
 
 #portfolio .portfolio-list .nav li:hover, #portfolio .portfolio-list .nav li.filter-active  {
-  color: #b8a07e;
+  color: #1986ce;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -792,3 +793,4 @@ nav ul li a {
 	position:relative;
 	top:1px;
 }
+
