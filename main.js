@@ -69,3 +69,35 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+function redirigir() {
+    window.location.href = "https://ruxxdev.site";
+}
+
+function redirigir2() {
+    window.location.href = "https://durbanod.com";
+}
+
+function redirigir3() {
+    window.location.href = "https://malditosilencio.com";
+}
+
+function redirigir4() {
+    window.location.href = "https://casaperibocadillo.com";
+}
+
+function redirigir5() {
+    window.location.href = "https://ruxxdev.site";
+}
+
+function redirigir() {
+    window.location.href = "https://ruxxdev.site";
+}
+
+function redirigir() {
+    window.location.href = "https://ruxxdev.site";
+}
+
+function redirigir() {
+    window.location.href = "https://ruxxdev.site";
+}
