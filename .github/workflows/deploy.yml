@@ -64,4 +64,4 @@ jobs:
         # private ssh key registered on the server
         pass: ${{secrets.REMOTE_PASS}}
         # command to be executed
-        script: chmod -R 774 /var/www/html/* ;  cp -r /var/www/html/dist/* /var/www/html ; chown -R www-data:www-data /var/www/html
+        script: chmod -R 774 /var/www/html/* ;  cp -r /var/www/html/dist/* /var/www/html/antonio ; chown -R www-data:www-data /var/www/html
