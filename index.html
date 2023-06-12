@@ -1,559 +1,240 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-  <!-- meta -->
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Gonan Building construcciones</title>
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+    <!--BoxIcon-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/657f2b1f77.js" crossorigin="anonymous"></script>
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
-  <link href="lib/hover/hover.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
- 
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-
-  <!-- Responsive css -->
-  <link href="css/responsive.css" rel="stylesheet">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="images/favicon.png">
-
- 
+    <title>Reto100DiasPortafolio</title>
 </head>
-
 <body>
 
-  <!-- start section navbar -->
-  <nav id="main-nav">
-    <div class="row">
-      <div class="container">
+    <!-- Header-->
+    <header class="header">
+        <a href="#" class="logo">RuXx DeSiGn</a>
 
-        <div class="logo">
-          <a href="index.html"><img src="images/log1.png" alt="logo"></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Inicio</a>
+            <a href="#about">Acerca de</a>
+            <a href="#services">Servicios</a>
+            <a href="#portfolio">Proyectos</a>
+            <a href="#contact">Contacto</a>
+            
+        </nav>
+    </header>
+
+    <!--section home design-->
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, it's Me</h3>
+            <h1>Antonio DelaRua</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  molestias quis quia illum molestiae voluptatum modi provident autem?</p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            
+            </div>
+            <a href="#" class="btn">Download CV</a>
         </div>
 
-        <div class="responsive"><em data-icon="m" class="ion-navicon-round"></em></div>
+        <div class="home-img">
+            <img src="img/rua11.png" alt="home">
 
-        <ul class="nav-menu list-unstyled">
-          <li><a href="#header" class="smoothScroll">Inicio</a></li>
-          <li><a href="#about" class="smoothScroll">Nosotros</a></li>
-          <li><a href="#servic" class="smoothScroll">Servicios</a></li>
-          <li><a href="#portfolio" class="smoothScroll">Trabajos</a></li>
-          <li><a href="#journal" class="smoothScroll">Actual</a></li>
-          <li><a href="#contact" class="smoothScroll">Contact</a></li>
-        </ul>
+        </div>
+    </section>
 
-      </div>
-    </div>
-  </nav>
-  <!-- End section navbar -->
+        <!--section about design-->
 
-
-  <!-- start section header -->
-  <div id="header" class="home">
-
-    <div class="container" >
-      <div class="header-content" style="background-color: white; width:150px; height: 400px;">
-        <h1 style="color: black;">Gonan <span class="typed"></span></h1>
-        <p style="color: black;">obras Construcciones reformas</p>
-
-        <ul class="list-unstyled list-social">
-          <li><a href="#"><em class="ion-social-facebook"></em></a></li>
-          <li><a href="#"><em class="ion-social-twitter"></em></a></li> 
-          <li><a href="#"><em class="ion-social-googleplus"></em></a></li>
-          <li><a href="#"><iconify-icon icon="ion:logo-whatsapp"></iconify-icon></a></li>
-          
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- End section header -->
-
-
-  <!-- start section about us -->
-  <div id="about" class="paddsection">
-    <div class="container">
-      <div class="row justify-content-between">
-
-        <div class="col-lg-4 ">
-          <div class="div-img-bg">
+        <section class="about" id="about">
             <div class="about-img">
-              <img src="/images/gifeitor.gif" class="img-responsive" alt="me">
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-7">
-          <div class="about-descr">
-
-            <p class="p-heading">Somos una Empresa, situada en Fuengirola- Costa Del Sol</p>
-            <p class="separator">Con mas de 20 años de experiencia en el sector, nos preocupamos de cada detalle que nos pida nuestros clientes, garantizandonos así su plena satisfacción con nuestros servicios. disponemos de una gran amplia plantilla de grandisimos profesionales. Puedes Encontrarnos tambien en nuestra Oficina en Av.Los boliches - Fuengirola. </p>
-            <a href="blog-single.html" class="myButton">Más Información</a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end section about us -->
-
-  <section id="servic" class="ts-service-area mt-4" >
-    <div class="container"  style="margin-top: 50px;">
-      <div class="container" >
-        <div class="section-title text-center">
-          <h2>Nuestros Servicios</h2>
-        </div>
-      </div>
-      <!--/ Title row end -->
-  
-      <div class="row">
-          <div class="col-lg-4 mt-4">
-            <div class="ts-service-box d-flex">
-                <div class="ts-service-box-img">
-                  <img loading="lazy" src="images/icon-image/icono-2.png" style="width: 60px;" alt="service-icon">
+                <img src="img/rua13.png" alt="about">
                 </div>
-                <div class="ts-service-box-info">
-                  <h3 class="service-box-title"><a href="#">Construcción en General</a></h3>
-                  <p>Con más de 20 años en el sector, manejamos las mejores técnicas para satisfacer a nuestros clientes</p>
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3>Frontend Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eos facere neque quibusdam atque nihil iste. Fugit accusamus ullam modi voluptate laborum, sit voluptates ea architecto officiis hic molestias a.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+        </section>
+
+        <!--section Services design-->
+
+        <section class="services" id="services">
+            <h2 class="heading" style="padding-bottom: 7rem;">My <span>Services</span></h2>
+
+            <div class="services-container">
+                <div class="services-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <a href="#" class="btn">Read More</a>
                 </div>
-            </div><!-- Service 1 end -->
-  
-            <div class="ts-service-box d-flex">
-                <div class="ts-service-box-img">
-                  <img loading="lazy" src="images/icon-image/pared-de-ladrillo.png" alt="service-icon">
+
+                <div class="services-box">
+                    <i class='bx bxs-paint'></i>
+                    <h3>Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <a href="#" class="btn">Read More</a>
                 </div>
-                <div class="ts-service-box-info">
-                  <h3 class="service-box-title"><a href="#">Reformas </a></h3>
-                  <p>Desde un cuarto de baño hasta una urbanización </p>
+
+                <div class="services-box">
+                    <i class='bx bx-line-chart' ></i>
+                    <h3>Digital Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <a href="#" class="btn">Read More</a>
                 </div>
-            </div><!-- Service 2 end -->
-  
-            <div class="ts-service-box d-flex">
-                <div class="ts-service-box-img">
-                  <img  loading="lazy" src="images/icon-image/icono-4.png"  alt="service-icon">
+
                 </div>
-                <div class="ts-service-box-info ">
-                  <h3 class="service-box-title"><a href="#">Diseño De Interiores</a></h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
-                </div>
-            </div><!-- Service 3 end -->
-  
-          </div><!-- Col end -->
-  
-          <div class="col-lg-4 text-center">
-            <img loading="lazy" class="img-fluid" src="images/loggon.png" alt="service-avater-image">
-           
-           
-          </div><!-- Col end -->
-          <br>
-          <div class="col-lg-4 mt-4">
-            <div class="ts-service-box d-flex">
-                <div class="ts-service-box-img">
-                  <img loading="lazy" src="images/icon-image/icono1.png" alt="service-icon">
-                </div>
-                <div class="ts-service-box-info">
-                  <h3 class="service-box-title"><a href="#">diseño de exteriores</a></h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
-                </div>
-            </div><!-- Service 4 end -->
-  
-            <div class="ts-service-box d-flex">
-                <div class="ts-service-box-img">
-                  <img loading="lazy" src="images/icon-image/icono-3.png" alt="service-icon">
-                </div>
-                <div class="ts-service-box-info">
-                  <h3 class="service-box-title"><a href="#">Obras completas</a></h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
-                </div>
-            </div><!-- Service 5 end -->
-  
-            <div class="ts-service-box d-flex">
-                <div class="ts-service-box-img">
-                  <img loading="lazy" src="images/icon-image/icono-5.png" alt="service-icon">
-                </div>
-                <div class="ts-service-box-info">
-                  <h3 class="service-box-title"><a href="#">Maxima seguridad</a></h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
-                </div>
-            </div><!-- Service 6 end -->
-          </div><!-- Col end -->
-      </div><!-- Content row end -->
-  
-    </div>
-    <!--/ Container end -->
-  </section>
-  
-
-  <!-- start section services -->
- 
-  <!-- start section portfolio -->
-  <div id="portfolio" class="text-center paddsection">
-
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>Obras Realizadas</h2>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-
-          <div class="portfolio-list">
-
-            <ul class="nav list-unstyled" id="portfolio-flters">
-              <li class="filter filter-active" data-filter=".all">Todos</li>
-              <li class="filter " data-filter=".10viviendas">10 Viviendas</li>
-              <li class="filter" data-filter=".peterestepona">Chalet-1</li>
-              <li class="filter" data-filter=".jurgen">Chalet-2</li>
-              <li class="filter" data-filter=".harrison">Chalet-3</li>
-             
-              
-            </ul>
-
-          </div>
-
-          <div class="portfolio-container">
-
-           
-
-        
-              <!--         SECCION PETER ESTEPONA         -->  
-           
-          
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits peterestepona">
-              <a class="popup-img" href="img/foto1pop.png ">
-                <img src="img/foto1.png"  alt="img">
-              </a>
-            </div>
-
-            
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits peterestepona">
-              <a class="popup-img" href="img/foto2pop.png">
-                <img src="img/foto2.png"  alt="img">
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits peterestepona">
-              <a class="popup-img" href="img/foto3pop.png">
-                <img src="img/foto3.png"  alt="img">
-              </a>
-            </div>
-            
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits peterestepona">
-              <a class="popup-img" href="img/foto4pop.png">
-                <img src="img/foto4.png"  alt="img">
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits peterestepona">
-              <a class="popup-img" href="img/foto5pop.png">
-                <img src="img/foto5.png"  alt="img">
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits peterestepona">
-              <a class="popup-img" href="img/foto6pop.png">
-                <img src="img/foto6.png"  alt="img">
-              </a>
-            </div>
-
-
-
-
-
-
-            <!-- 10 VIVIENDAS  -->
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig 10viviendas">
-              <a class="popup-img" href="img/foto7pop.png">
-                <img src="img/foto7.png" alt="img">
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig 10viviendas">
-              <a class="popup-img" href="img/foto8pop.png">
-                <img src="img/foto8.png" alt="img">
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig 10viviendas">
-              <a class="popup-img" href="img/foto9pop.png">
-                <img src="img/foto9.png" alt="img">
-              </a>
-            </div>
-            
-
-
-
-            <!-- jurgen -->
-
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign jurgen">
-              <a class="popup-img" href="img/foto10pop.png">
-                <img src="img/foto10.png" alt="img">
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign jurgen">
-              <a class="popup-img" href="img/foto11pop.png">
-                <img src="img/foto11.png" alt="img">
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign jurgen">
-              <a class="popup-img" href="img/foto12pop.png">
-                <img src="img/foto12.png" alt="img">
-              </a>
-            </div>
-
-
-
-
-            <!--    HARRINSON     -->
-
-           
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits harrison">
-              <a class="popup-img" href="img/foto13pop.png">
-                <img src="img/foto13.png"  alt="img">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits harrison">
-              <a class="popup-img" href="img/foto14pop.png">
-                <img src="img/foto14.png"  alt="img">
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits harrison">
-              <a class="popup-img" href="img/foto15pop.png">
-                <img src="img/foto15.png"  alt="img">
-              </a>
-            </div>
-
-
-
-
-
-          </div>
-      
-        </div>
-        <a href="galery.html" class="myButton">Ver todos</a>
-      </div>
-    </div>
-
-  </div>
-  <!-- End section portfolio -->
-
-
-  <!-- start section journal -->
-  <div id="journal" class="text-left paddsection">
-
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>Trabajo Actual</h2>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="journal-block">
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="journal-info">
-
-<<<<<<< develop
-              <img src="img/map01.png" class="img-responsive" alt="img"></a>
-=======
-              <a href="blog-single.html"><img src="img/map01.png" class="img-responsive" alt="img"></a>
->>>>>>> main
-
-              <div class="journal-txt">
-
-               
-
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="journal-info">
-
-<<<<<<< develop
-              <img src="images/map02.png" class="img-responsive" alt="img"></a>
-=======
-              <a href="blog-single.html"><img src="img/map01.png" class="img-responsive" alt="img"></a>
->>>>>>> main
-
-              <div class="journal-txt">
 
                 
+        </section>
 
-              </div>
 
-            </div>
-          </div>
+         <!--section Portfolio design-->
 
-          <div class="col-lg-4 col-md-6">
-            <div class="journal-info">
+         <section class="portfolio" id="portfolio">
+            <h2 class="heading">Latest <span>Project</span></h2>
 
-<<<<<<< develop
-              <img src="images/map03.png" class="img-responsive" alt="img"></a>
-=======
-              <a href="blog-single.html"><img src="img/map01.png" class="img-responsive" alt="img"></a>
->>>>>>> main
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="img/komputer-02.png" alt="portfolio">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ratione?</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
 
-              <div class="journal-txt">
+                    </div>
 
-               
+                    </div>
 
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <!-- End section journal -->
-
-  
+                    <div class="portfolio-box">
+                        <img src="img/portfolio2.png" alt="portfolio">
+                        <div class="portfolio-layer">
+                            <h4>Web Design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ratione?</p>
+                            <a href="#"><i class='bx bx-link-external'></i></a>
     
-  <!-- End section journal -->
+                        </div>
+    
+                        </div>
 
-
-  <!-- start sectoion contact -->
-  <div id="contact" class="paddsection">
-    <div class="container">
-      <div class="contact-block1">
-        <div class="row">
-
-          <div class="col-lg-6">
-            <div class="contact-contact">
-
-              <h2 class="mb-30">Contacta Con Nosotros</h2>
-
-              <ul class="contact-details">
-                <li><span>22 Av.Los Boliches</span></li>
-                <li><span>Malaga, Fuengirola</span></li>
-                <li><span>+34 633437069</span></li>
-                <li><span>gonanbuilding@gmail.com</span></li>
-              </ul>
-
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="row">
-
-                <div id="sendmessage">Mensaje enviado. Gracias!</div>
-                <div id="errormessage"></div>
-
-                <div class="col-lg-6">
-                  <div class="form-group contact-block1">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Porfavor pon más de 4 caracteres" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Introduce un email correcto" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Tema" data-rule="minlen:4" data-msg="Por favor describe el tema con 8 letras o más" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <input type="submit" class="btn btn-defeault btn-send" value="Enviar Mensaje">
-                </div>
-
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  
-  <!-- start sectoion contact -->
-
-
-  <!-- start section footer -->
-  <div id="footer" class="text-center">
-    <div class="container">
-      <div class="socials-media text-center">
-
-          <ul class="list-unstyled ">
-            <li><a href="#"><em class="ion-social-facebook"></em></a></li>
-            <li><a href="#"><em class="ion-social-twitter"></em></a></li> 
-            <li><a href="#"><em class="ion-social-googleplus"></em></a></li>
-            <li><a href="#"><iconify-icon icon="ion:logo-whatsapp"></iconify-icon></a></li>
-            
-          </ul>
-
-      </div>
-
-      <p>&copy; Copyrights Gonan Building. All rights reserved.</p>
-
-      <div class="credits">
+                        <div class="portfolio-box">
+                            <img src="img/portfolio1.png" alt="portfolio">
+                            <div class="portfolio-layer">
+                                <h4>Web Design</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ratione?</p>
+                                <a href="#"><i class='bx bx-link-external'></i></a>
         
-        DeSigN by <a href="https://ruxxdesing.site">RuXxDeSiNg.site</a>
-      </div>
+                            </div>
+        
+                            </div>
 
-    </div>
-  </div>
-  <!-- End section footer -->
+                            <div class="portfolio-box">
+                                <img src="img/portfolio1.png" alt="portfolio">
+                                <div class="portfolio-layer">
+                                    <h4>Web Design</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ratione?</p>
+                                    <a href="#"><i class='bx bx-link-external'></i></a>
+            
+                                </div>
+            
+                                </div>
 
-  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/typed/typed.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+                                <div class="portfolio-box">
+                                    <img src="img/portfolio1.png" alt="portfolio">
+                                    <div class="portfolio-layer">
+                                        <h4>Web Design</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ratione?</p>
+                                        <a href="#"><i class='bx bx-link-external'></i></a>
+                
+                                    </div>
+                
+                                    </div>
 
-  
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+                                    <div class="portfolio-box">
+                                        <img src="img/portfolio1.png" alt="portfolio">
+                                        <div class="portfolio-layer">
+                                            <h4>Web Design</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ratione?</p>
+                                            <a href="#"><i class='bx bx-link-external'></i></a>
+                    
+                                        </div>
+                    
+                                        </div>
 
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-  <script src="//code.tidio.co/zakmycminrgfval8nezzbua2q4vjlxbl.js" async></script>
+                          
 
+                    </div>
+                   
+         </section>
+
+            <!--section Contact design-->
+
+            <section class="contact" id="contact">
+
+                <h2 class="heading">Contact <span>Me</span></h2>
+                
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="Name" >
+                        <input type="email" placeholder="Email address" >
+                    </div>
+                    <div class="input-box">
+                        <input type="number" placeholder="Mobile Number" >
+                        <input type="text" placeholder="Email Subject" >
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </form>
+
+
+
+            </section>
+
+            <!--footer section design-->
+
+            <footer class="footer">
+                <div class="footer-text">
+                    <p>Copyright &copy; 2023 by RuXx | all rights Reserved</p>
+                    </div>
+
+                    <div class="footer-iconTop">
+                        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+                    </div>
+
+
+            </footer>
+
+            <!-- scroll reveal-->
+
+            <script src="https://unpkg.com/scrollreveal"></script>
+
+        
+
+
+
+    <!-- Scripts -->
+    <script src="main.js"></script> 
+
+    <!-- typed js-->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
 
 </body>
-
 </html>
-
