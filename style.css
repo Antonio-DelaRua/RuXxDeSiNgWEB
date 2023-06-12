@@ -81,6 +81,10 @@ section{
     display: none;
 }
 
+.card1{
+
+}
+
 .home{
     display: flex;
     justify-content: space-between;
@@ -549,5 +553,11 @@ span {
         margin-top: 2rem;
     }
 }
+
+
+
+
+ 
+  
 
 
