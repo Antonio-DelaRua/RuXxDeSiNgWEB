@@ -50,7 +50,7 @@ jobs:
         # source to copy from
         source: "dist/*" # optional
         # destination to download on server
-        target: "/var/www/html" # optional
+        target: "/var/www/html/antonio" # optional
 
     - name: Execute remote command using ssh template
       uses: cross-the-world/ssh-pipeline@v1.2.0
